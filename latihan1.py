@@ -1,46 +1,37 @@
-nilai_list = [1, 2, 3, 4, 5]
-hasil_list = list(map(lambda i: i*12, nilai_list))
-print(hasil_list)
+print("________________________________________")
 
-#fungsi tambah
+#mengubah function menggunakan lambda
+def a(x):
+    return x ** 2
 
-def tambah(x, y):
-    return x+y
-    
-fungsi_2 = tambah(5,3)
-print(fungsi_2)
+lambda x: x ** 2
 
-#tambah
+print("1. Mengubah function menggunakan Lambda \n   def a(x): \n \t   return x ** 2")
+print("   Hasil : lambda x: x ** 2")
 
-fungsi_2 = lambda x, y : x + y
+def b(x, y):
+    return math.sqrt(x ** 2 + y ** 2)
 
-print(fungsi_2(5,3))
+lambda x, y: math.sqrt(x ** 2 + y ** 2)
 
-#jumlah
+print("________________________________________")
+print("2. Mengubah function menggunakan Lambda \n   def b(x, y): \n \t   return math.sqrt(x ** 2 + y ** 2)")
+print("   Hasil : lambda x, y: math.sqrt(x ** 2 + y ** 2))")
 
-def tambah(x):
-    return x+1
-    
-fungsi_1 = tambah(5)
-print(fungsi_1)
+def c(*args):
+    return sum(args) / len(args)
 
-#jumlah
+lambda *args: sum(args) / len(args)
 
-fungsi_1 = lambda x : x + 1
+print("________________________________________")
+print("3. Mengubah function menggunakan Lambda \n   def c(*args): \n \t   return sum(args) / len(args)")
+print("   Hasil : lambda *args: sum(args) / len(args))")
 
-print(fungsi_1(5))
+def d(s):
+    return "".join(set(s))
 
-#Tambahkan 10 ke argumen a, dan kembalikan hasilnya.
+lambda s: "".join(set(s))
 
-x = lambda a: a + 10
-print(x(5))
-
-#Fungsi lambda dapat mengambil sejumlah argumen:
-
-x = lambda a, b: a * b
-print(x(5, 6))
-
-#Fungsi lambda 
-
-x = lambda a, b, c : a + b + c
-print(x(5, 6, 2))
+print("________________________________________")
+print("4. Mengubah function menggunakan Lambda \n   def d(s): \n \t   return "".join(set(s))")
+print("   Hasil : lambda s: "".join(set(s)))")
